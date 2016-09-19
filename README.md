@@ -1,5 +1,6 @@
 # command_shift
 
+![Screenshot1](command_shift.png)
 
 command_shift is a web app with a mobile extension for medical organizations that need more reactive and user-friendly shift-delegation software. Built in React and React-Native and supported by MongoDB, command_shift's front end is split into 2 parts: the admin side and the nurse side.
 
@@ -15,3 +16,4 @@ Developed by Team Giterate, Giterate is an app built by Team Giterate that allow
 One key feature of Giterate (developed by Team Giterate) is its Giteration algorithm, which giterates through the stringified algorithms submitted by the user or applicant and returns GITERATE an object detailing coding tendencies of the Giterator. Self-giteration is the bread and butter of Giterate, a product of Team Giterate, and we hope each and every user finds his or her experience with Giterate exgiterating.
 
 ******************************function teamgiterate(){ return teamgiterate() }()***********************************
+

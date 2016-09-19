@@ -19,6 +19,7 @@ class NamePage extends Component {
 		this.fetchNurses = this.fetchNurses.bind(this)
 		this.updateNote = this.updateNote.bind(this);
 		this.updateColor = this.updateColor.bind(this)
+		this.revertColor = this.revertColor.bind(this)
 
 	}
 
@@ -32,17 +33,25 @@ class NamePage extends Component {
 		this.setState({nurseData});
 	}
 
-	updateColor(bedNum){
+	revertColor(bedNum){
 		var nurseData = this.state.nurseData;
-		nurseData[bedNum].bgColor = '#4cc45c';
-		this.setState({nurseData})
-		console.log(this.state)
 
 		setTimeout(() => {
-		nurseData[bedNum].bgColor = '#d11010';
-		this.setState({nurseData})
-		console.log(this.state)
-		}, 5000);
+			nurseData[bedNum].bgColor = '#d11010';
+			this.setState({nurseData});
+			console.log(this.state);
+		}, 3000);
+	}
+
+	updateColor(bedNum){
+
+		var nurseData = this.state.nurseData;
+		nurseData[bedNum].bgColor = '#4cc45c';
+		this.setState({nurseData});
+		console.log(this.state);
+
+			this.revertColor(bedNum)
+
 	}
 
 	fetchNurses(){
